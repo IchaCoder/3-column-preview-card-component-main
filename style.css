@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.main{
+    margin: 0 auto;
+    max-width: 800px;
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+    
+}
+.col-one{
+    background-color: hsl(31, 77%, 52%);
+    padding: 50px;
+    color: hsla(0, 0%, 100%, 0.75)    ;
+    border-radius: 10px 0 0px 10px;
+}
+
+.col-two{
+    background-color: hsl(184, 100%, 22%);
+    padding: 50px;
+    color: hsla(0, 0%, 100%, 0.75)    ;
+}
+.col-three{
+    background-color: hsl(179, 100%, 13%);
+    padding: 50px;
+    color: hsla(0, 0%, 100%, 0.75)    ;
+    border-radius: 0 10px 10px 0;
+}
+
+.heading{
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-weight: 700;
+    font-size: 30px;
+}
+.paragraph{
+    margin-top: 30px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+.wrap-para{
+    margin-top: 30px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color:  hsl(0, 0%, 95%);
+    margin-top: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-one{
+    color: hsl(31, 77%, 52%);
+}
+.btn-two{
+    color: hsl(184, 100%, 22%);
+}
+.btn-three{
+    color: hsl(179, 100%, 13%);
+}
+.btn-one:hover{
+    color: #f2f2f2 ;
+    background-color: hsl(31, 77%, 52%) ;
+    border: solid 1px #f2f2f2;
+}
+.btn-two:hover{
+    color: #f2f2f2 ;
+    background-color:  hsl(184, 100%, 22%) ;
+    border: solid 1px #f2f2f2;
+}
+.btn-three:hover{
+    color: #f2f2f2 ;
+    background-color: hsl(179, 100%, 13%) ;
+    border: solid 1px #f2f2f2;
+}
+@media only screen and (min-width:471px) {
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width:470px) {
+    .main{
+        margin: auto;
+        max-width: 85%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .col-three{
+        border-radius: 0 0 10px 10px;
+    }
+    .col-one{
+        border-radius: 10px 10px 0 0;
+    }
+}
